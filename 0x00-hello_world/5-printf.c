@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-*main-prints a text exactly
-*Return-0 if exited properly, and non zero if otherwise 
+ * Main-prints a text exactly
+ * Return-0 if exited properly, and non zero if otherwise 
 */
 int main(void)
 {
