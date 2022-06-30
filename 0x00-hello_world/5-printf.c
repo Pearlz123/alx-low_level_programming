@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main-no comment
- * return-no comments
+ * main-prints a text exactly
+ * return-0 if exited properly, and non zero if otherwise 
 */
 int main(void)
 {
