@@ -6,9 +6,12 @@
  */
 int print_last_digit(int n)
 {
-int nac, lastdigit;
-lastdigit = n % 10;
-nac = lastdigit + 48;
-_putchar(nac);
-return (lastdigit);
+int a;
+if (n < 0)
+n = -n;
+a = n % 10;
+if (a < 0)
+a = -a;
+_putchar(a + '0');
+return (a);
 }
