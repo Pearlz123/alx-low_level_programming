@@ -11,9 +11,9 @@ while (hr < 24)
 min = 0;
 while (min < 60)
 {
-_putchar(hr+48);
+_putchar(hr + 48);
 _putchar(':');
-_putchar(min+48);
+_putchar(min + 48);
 min++;
 }
 hr++;
