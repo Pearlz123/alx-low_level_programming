@@ -7,14 +7,16 @@
 
 void more_numbers(void)
 {
-int a;
-int b;
-
-for (a = 0; a <= 10; a++)
+int b, i, m;
+for (i = 0; i < 10; i++)
 {
-for (b = 0; b <= 14; b++)
+for (b = 48; b < 58; b++)
 {
-	_putchar(b);
+_putchar(b);
+for (m = 49; m < 53; m++)
+{
+	_putchar(m);
+}
 }
 _putchar('\n');
 }
