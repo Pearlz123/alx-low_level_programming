@@ -1,21 +1,27 @@
 #include "main.h"
 /**
  * cap_string - converts strings to upper case
- * @str: str
+ * @x: string param
  * Return: return
  */
-char *cap_string(char *str)
-{
-	int i, j;
-	char sep[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; str[i] != '\0'; i++)
+char *cap_string(char *x)
+
+{
+char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+int len = 13;
+int a = 0, i;
+
+while (x[a])
+{
+	i = 0;
+	while (i < len)
 	{
-		for (j = 0; j < 10; j++)
-		{
-			if (str[i] == sep[j])
-			str[i + 1] = str[i + 1] + 32;
-		}
+		if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+			x[a] = x[a] - 32;
+		i++;
 	}
-	return (str);
+	a++;
+}
+return (x);
 }
