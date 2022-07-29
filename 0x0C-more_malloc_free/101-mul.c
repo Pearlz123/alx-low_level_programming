@@ -99,6 +99,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = 'x';
 		prod++;
 	}
+
 	prod--;
 
 	while (zeroes--)
@@ -106,6 +107,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = '0';
 		prod--;
 	}
+
 	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
 		if (*mult < '0' || *mult > '9')
@@ -149,6 +151,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		next_prod--;
 		next_len--;
 	}
+
 	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 	{
 		num = (*next_prod - '0');
@@ -162,6 +165,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	if (tens)
 		*final_prod = (tens % 10) + '0';
 }
+
 /**
  * main - Multiplies two positive numbers.
  * @argv: The number of arguments passed to the program.
