@@ -12,6 +12,19 @@ int op_add(int a, int b)
 }
 
 /**
+ * op_sub - subtraction operator
+ * @a: first in
+ * @b: second int
+ * Return: difference of 2 numbers
+ */
+
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+
+/**
  * op_mul - multiplies two numbers
  *
  * @a: first number
