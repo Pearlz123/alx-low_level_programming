@@ -1,1 +1,1 @@
-0x03-debugging
+On my journey to becoming a C-programmer
